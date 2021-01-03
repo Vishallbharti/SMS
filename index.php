@@ -16,7 +16,13 @@
 <td>Choose Standerd</td>
 <td>
     <select name="std" required>
-	<option>1st</option>
+	<?php
+	for($i = 0; $i<=12; $i++){
+		?><option><?php echo $i ?></option>
+		<?php
+	}
+	?>
+	<!-- <option>1st</option>
 	<option>2nd</option>
 	<option>3rd</option>
 	<option>4th</option>
@@ -27,7 +33,7 @@
 	<option>9th</option>
 	<option>10th</option>
 	<option>11th</option>
-	<option>12th</option>
+	<option>12th</option> -->
 	</select>
 </td>
 </tr>
